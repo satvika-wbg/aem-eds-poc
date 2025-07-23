@@ -1,3 +1,3 @@
 export default function decorate(block) {
-  console.log("test video block");
+  console.log("test video block", block);
 }
