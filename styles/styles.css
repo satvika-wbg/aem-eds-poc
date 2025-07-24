@@ -1653,7 +1653,7 @@
 }
 
 .lp-pause:before {
-  content: "\e902";
+  content: "\e240";
 }
 
 .lp-pause-circle:before {
