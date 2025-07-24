@@ -5,7 +5,7 @@ export default function decorate(block) {
     const scrollIndicator = document.createElement('a');
     scrollIndicator.className = 'scroll-indicator';
     const spanElement = document.createElement('span')
-    spanElement.className = 'lp lp=chevron-down'
+    spanElement.className = 'lp lp-chevron-down'
     spanElement.addEventListener('click', () => {
         //logic on scroll icon click
     });
