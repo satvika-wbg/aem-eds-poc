@@ -1,5 +1,5 @@
 import {
-  div, img, video, source, button,
+  div, img, video, source, button, span
 } from '../../scripts/dom-helpers.js';
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -34,13 +34,13 @@ function createVideoPlayer(videoSrc) {
   /* eslint-disable function-paren-newline */
   const videoPlayer = div({ class: 'video-container' },
     div({ class: 'video-play', id: 'playButton', tabindex: 0 },
-      button({ class: 'video-play-btn', 'aria-label': 'video-play-btn' }, img({
-        class: 'play-icon controls', src: playIcon, width: 28, height: 28, alt: 'play animation',
+      button({ class: 'lp lp-play', 'aria-label': 'video-play-btn' }, span({
+        class: 'play-icon controls',
       })),
     ),
     div({ class: 'video-pause inactive', id: 'pauseButton' },
-      button({ class: 'video-pause-btn', 'aria-label': 'video-pause-btn' }, img({
-        class: 'pause-icon controls', src: pauseIcon, width: 28, height: 28, alt: 'pause animation',
+      button({ class: 'video-pause-btn', 'aria-label': 'video-pause-btn' }, span({
+        class: 'lp lp-pause',
       })),
     ),
     video({ id: 'videoPlayer', preload: 'none'},
