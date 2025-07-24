@@ -34,8 +34,8 @@ function createVideoPlayer(videoSrc) {
   /* eslint-disable function-paren-newline */
   const videoPlayer = div({ class: 'video-container' },
     div({ class: 'video-play', id: 'playButton', tabindex: 0 },
-      button({ class: 'lp lp-play', 'aria-label': 'video-play-btn' }, span({
-        class: 'play-icon controls',
+      button({ class: 'video-play-btn', 'aria-label': 'video-play-btn' }, span({
+        class: 'lp lp-play',
       })),
     ),
     div({ class: 'video-pause inactive', id: 'pauseButton' },
