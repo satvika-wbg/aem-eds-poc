@@ -1,5 +1,4 @@
 export default function decorate(block) {
-  console.log('test video block', block);
   const btnContainer = block.querySelector('.button-container');
   if (btnContainer) {
     const scrollIndicator = document.createElement('a');
