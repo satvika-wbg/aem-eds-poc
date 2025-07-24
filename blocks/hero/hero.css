@@ -1,5 +1,6 @@
 .academyHeader:before {
-background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   height: 150px;
   position: absolute;
   top: 0;
@@ -7,15 +8,16 @@ background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /*
   width: 100%;
   content: "";
 }
+
 .academy_video:after {
-     content: "";
+  content: "";
   position: absolute;
   bottom: 185px;
   left: 0;
   height: 65%;
   width: 100%;
   z-index: 0;
-background: linear-gradient(to bottom,  rgba(231,237,243,0) 0%,rgba(231,237,243,1) 30%,rgba(231,237,243,1) 100%,rgba(231,237,243,0) 100%); 
+  background: linear-gradient(to bottom, rgba(231, 237, 243, 0) 0%, rgba(231, 237, 243, 1) 30%, rgba(231, 237, 243, 1) 100%, rgba(231, 237, 243, 0) 100%);
 }
 
 .video-banner .bg-video:before,
@@ -32,6 +34,7 @@ background: linear-gradient(to bottom,  rgba(231,237,243,0) 0%,rgba(231,237,243,
   background: linear-gradient(180deg, #017D8D 0%, rgba(1, 125, 141, 0) 85%);
   filter: blur(60px);
 }
+
 .video-banner .bg-video::after,
 .img-banner .bg-video::after {
   content: "";
@@ -55,7 +58,7 @@ background: linear-gradient(to bottom,  rgba(231,237,243,0) 0%,rgba(231,237,243,
   height: 40%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -67,53 +70,60 @@ background: linear-gradient(to bottom,  rgba(231,237,243,0) 0%,rgba(231,237,243,
   align-items: center;
   text-align: center;
   gap: var(--spacing-regular);
-height: 70vh;
-    z-index:10; 
+  height: 70vh;
+  z-index: 10;
 }
+
 @media (min-width: 500px) {
-.banner-content {
-height: 60vh;
+  .banner-content {
+    height: 60vh;
+  }
 }
-}
+
 @media (min-width: 769px) {
-.banner-content {
+  .banner-content {
     height: 105vh;
-    }
-.academy_video:after {
-     content: "";
-  position: absolute;
-  bottom: -155px;
-  left: 0;
-  height: 82%;
-  width: 100%;
-  z-index: 0;
-background: linear-gradient(to bottom,  rgba(231,237,243,0) 0%,rgba(231,237,243,1) 60%,rgba(231,237,243,1) 100%,rgba(231,237,243,0) 100%); 
+  }
+
+  .academy_video:after {
+    content: "";
+    position: absolute;
+    bottom: -155px;
+    left: 0;
+    height: 82%;
+    width: 100%;
+    z-index: 0;
+    background: linear-gradient(to bottom, rgba(231, 237, 243, 0) 0%, rgba(231, 237, 243, 1) 60%, rgba(231, 237, 243, 1) 100%, rgba(231, 237, 243, 0) 100%);
+  }
+
+  .bg-video,
+  .bg-img {
+    height: 100%;
+  }
+
 }
 
-    .bg-video,
-.bg-img {
-  height: 100%;
-}
-
-}
 @media (min-width: 1024px) {
-.banner-content {
+  .banner-content {
     height: 112vh;
-    }
-    .video-banner,
-.img-banner {
-  position: relative;
-  height: auto;
-  width: 100%;
-  height: 100vh;
+  }
+
+  .video-banner,
+  .img-banner {
+    position: relative;
+    height: auto;
+    width: 100%;
+    height: 100vh;
+  }
 }
-}
+
 @media (min-width: 1400px) {
-.banner-content {
+  .banner-content {
     height: 112vh;
-    }
+  }
 
 }
+
 .banner-content h1 {
   color: var(--text-on-light-highlight);
   text-align: center;
@@ -124,11 +134,13 @@ background: linear-gradient(to bottom,  rgba(231,237,243,0) 0%,rgba(231,237,243,
   letter-spacing: -1.8px;
   margin: 0;
 }
-.banner-content h1 + p {
+
+.banner-content h1+p {
   max-width: 700px;
   padding: 0 1rem;
   width: 100%;
 }
+
 .banner-content p {
   color: var(--text-on-light-default);
   text-align: center;
@@ -146,6 +158,7 @@ background: linear-gradient(to bottom,  rgba(231,237,243,0) 0%,rgba(231,237,243,
   flex-direction: column;
   align-items: center;
 }
+
 .scroll-indicator p {
   color: var(--text-on-light-highlight);
   text-align: center;
@@ -155,6 +168,7 @@ background: linear-gradient(to bottom,  rgba(231,237,243,0) 0%,rgba(231,237,243,
   line-height: 150%;
   padding-bottom: 0.75rem;
 }
+
 .scroll-indicator span {
   animation: bounce 2s infinite;
   display: flex;
@@ -169,9 +183,11 @@ background: linear-gradient(to bottom,  rgba(231,237,243,0) 0%,rgba(231,237,243,
   width: 32px;
   height: 32px;
 }
+
 .scroll-indicator span:before {
   font-size: 12px;
 }
+
 .scroll-indicator span:hover {
   border-radius: var(--lift-button-border-radius, 32px);
   border: 2px solid var(--Outline-On-Dark-Emphasis, #169AF3);
@@ -180,9 +196,12 @@ background: linear-gradient(to bottom,  rgba(231,237,243,0) 0%,rgba(231,237,243,
 }
 
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(10px);
   }
