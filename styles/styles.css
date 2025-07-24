@@ -3814,7 +3814,7 @@ footer a:hover {
 
 @media (min-width: 1400px) {
   .academy-video-video-banner .default-content-wrapper {
-    height: 75vh;
+    height: 85vh;
   }
 
 }
@@ -3862,6 +3862,7 @@ footer a:hover {
   font-weight: var(--body-font-weight-bold);
   line-height: 150%;
   padding-bottom: 0.75rem;
+  z-index: 9;
 }
 
 .scroll-indicator span {
