@@ -660,11 +660,20 @@ async function loadSection(section, loadCallback) {
   const status = section.dataset.sectionStatus;
   if (!status || status === 'initialized') {
     section.dataset.sectionStatus = 'loading';
+    // TO-DO: check if we can add section based logic here
+    if(section.classList.contains('sticky-section')){
+      const buttonContainer = section.querySelector('.button-container');
+      if (buttonContainer) {
+        const anchorElement = buttonContainer.querySelector('a');
+        anchorElement.classList.add('lp__btn', 'lp__btn_lg', 'lp__solid_blue_btn');
+      }
+    }
     const blocks = [...section.querySelectorAll('div.block')];
     for (let i = 0; i < blocks.length; i += 1) {
       // eslint-disable-next-line no-await-in-loop
       await loadBlock(blocks[i]);
     }
+    
     if (loadCallback) await loadCallback(section);
     section.dataset.sectionStatus = 'loaded';
     section.style.display = null;
