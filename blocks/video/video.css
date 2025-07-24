@@ -143,14 +143,18 @@ header .nav-wrapper {
     }
 }
 
-.video-play-btn img,
+.inactive .button {
+  display: none;
+}
+
+/* .video-play-btn img,
 .video-pause-btn img{
     display:none;
-    }
+    } */
 
 
 
-.video-play .video-play-btn::before {
+/* .video-play .video-play-btn::before {
   border: 0px solid transparent;
   font-size: 14px;
   color: #fff;
@@ -164,13 +168,10 @@ header .nav-wrapper {
   color: #fff;
   content: "\e902";
   font-family: 'loopicon' !important;
-  z-index: 99;
-  right: -17px;
-  position: relative;
-}
+} */
 
-.video-play:hover,
-.video-pause:hover {
+.video-play-btn:hover,
+.video-pause-btn:hover {
   border-radius: 100px;
   border: 2px solid var(--Background-Container-On-Dark-Link-Primary-Hover, #169AF3);
   background: var(--Outline-On-Dark-Emphasis, #169AF3);
