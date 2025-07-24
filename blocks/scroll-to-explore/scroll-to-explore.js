@@ -7,8 +7,8 @@ export default function decorate(block) {
     const spanElement = document.createElement('span');
     spanElement.className = 'lp lp-chevron-down';
     spanElement.addEventListener('click', () => {
-        //logic on scroll icon click
-});
+      document.getElementsByClassName('sticky-section')[0].scrollIntoView()
+    });
     const divElement = document.createElement('div');
     divElement.innerText = 'Scroll to explore';
     scrollIndicator.appendChild(divElement);
