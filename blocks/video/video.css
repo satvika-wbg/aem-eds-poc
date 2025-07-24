@@ -143,7 +143,7 @@ header .nav-wrapper {
     }
 }
 
-.inactive .button {
+.inactive button {
   display: none;
 }
 
