@@ -7,7 +7,7 @@ export default function decorate(block) {
     const spanElement = document.createElement('span');
     spanElement.className = 'lp lp-chevron-down';
     spanElement.addEventListener('click', () => {
-      console.log('scroll button action')    
+      console.log('scroll button action');
     });
     const divElement = document.createElement('div');
     divElement.innerText = 'Scroll to explore';
