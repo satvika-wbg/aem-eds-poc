@@ -157,7 +157,6 @@ header .nav-wrapper {
   border: 0px solid transparent;
   font-size: 14px;
   color: #fff;
-  content: "\e148";
   font-family: 'loopicon';
 }
 
@@ -165,7 +164,6 @@ header .nav-wrapper {
   border: 0px solid transparent;
   font-size: 14px;
   color: #fff;
-  content: "\e902";
   font-family: 'loopicon' !important;
 } 
 
