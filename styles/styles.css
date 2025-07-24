@@ -4031,13 +4031,10 @@ footer a:hover {
 
 .sticky-section {
   position: relative;
-}
-
-#one-center {
   padding-bottom: 150px;
 }
 
-.sticky-content {
+.sticky-section .default-content-wrapper {
   position: sticky;
   top: 0;
    padding: 200px 0;
@@ -4054,18 +4051,18 @@ footer a:hover {
 }
 @media (min-width:1024px) {
 
-.sticky-content {
+.sticky-section .default-content-wrapper {
      width: 80%;
     padding: 320px 0;
     }
 }
 @media (min-width:1024px) {
-.sticky-content {
+.sticky-section .default-content-wrapper {
      width: 50%;
     padding: 320px 0;
     }
 }
-.sticky-content h2 {
+.sticky-section .default-content-wrapper h2 {
   font-size: var(--font-size-1200);
   font-style: normal;
   font-weight: var(--heading-font-weight);
